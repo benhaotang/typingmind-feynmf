@@ -8,7 +8,7 @@
     "iconURL": "https://commons.wikimedia.org/wiki/File:Higgs_to_4leptons.png",
     "githubURL": "https://github.com/benhaotang/typingmind-feynmf",
     "openaiSpec": {
-        "name": "render_feynmann_diagram",
+        "name": "render_feynman_diagram",
         "parameters": {
             "type": "object",
             "required": [
