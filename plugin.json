@@ -32,7 +32,7 @@
                 },
                 "feynMF_code": {
                     "type": "string",
-                    "description": "The raw feynMF code, and feynMF code only as a single string to define the structure of the Feynman diagram. Due to current limitation, use `fmf{ghost}` instead of `fmf{dashes}` for dashed or higgs line. Don't include non-feynMF code. Best practice example: \"fmftopn{1}\n fmfbottomn{2}\n fmf{gluon}{i1,v1}\n fmf{ghost}{o1,v1}\n fmf{ghost,label=$p$,labelx=5,labely=-5}{v1,o2}\n fmflabel{i1}{$c,\\mu$}\n fmflabel{o1}{$b$}\n fmflabel{o2}{$a$}\n fmfdot{v1}\""
+                    "description": "The raw feynMF code, and feynMF code only as a single string to define the structure of the Feynman diagram. Due to current limitation, use `fmf{ghost}` instead of `fmf{dashes}` for dashed or higgs line. Don't include non-feynMF code. Best practice examples: 1. Gluon-Ghost Vertex for QCD: \"fmftopn{1}\n fmfbottomn{2}\n fmf{gluon}{i1,v1}\n fmf{ghost}{o1,v1}\n fmf{ghost,label=$p$,labelx=5,labely=-5}{v1,o2}\n fmflabel{i1}{$c,\\mu$}\n fmflabel{o1}{$b$}\n fmflabel{o2}{$a$}\n fmfdot{v1}\" 2. Box diagram: \"fmfleftn{2}\n fmfrightn{2}\n fmf{fermion}{o1,v2,v1,i1}\n fmf{fermion}{i2,v3,v4,o2}\n fmf{photon}{v1,v3}\n fmf{photon}{v2,v4}\" 3. E-P Annihilation: \"fmftop{i1,i2}\n fmfbottom{o1,o2}\n fmf{fermion}{i2,v1,i1}\n fmf{fermion}{o2,v2,o1}\n fmf{photon,labely=-10,label=$\\underline{A_\\mu(x)A_\\nu(x')}$}{v1,v2}\n fmf{photon}{v1,v2}\n fmfdot{v1,v2}\n fmflabel{i2,labelx=0,labely=-20}{$\\psi(x')$}\n fmflabel{i1,labely=-23,labelx=-27}{$\\overline{\\psi}(x')$}\n fmflabel{o2}{$\\psi(x)$}\n fmflabel{o1,labelx=-27,labely=-4}{$\\overline{\\psi}(x)$}\""
                 }
             }
         },
