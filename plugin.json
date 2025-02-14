@@ -1,0 +1,45 @@
+{
+    "id": "render_feynman_diagram",
+    "org": null,
+    "uuid": "b1b76ad5-4fb5-4ea3-a60d-3ec1375d0100",
+    "title": "Feynmann Diagram",
+    "system": false,
+    "version": 1,
+    "iconURL": "https://commons.wikimedia.org/wiki/File:Higgs_to_4leptons.png",
+    "githubURL": "https://github.com/benhaotang/typingmind-feynmf",
+    "openaiSpec": {
+        "name": "render_feynmann_diagram",
+        "parameters": {
+            "type": "object",
+            "required": [
+                "title",
+                "width",
+                "height",
+                "feynMF_code"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "description": "The title of the Feynman diagram to display above the diagram."
+                },
+                "width": {
+                    "type": "integer",
+                    "description": "The width of the rendered diagram in pixels."
+                },
+                "height": {
+                    "type": "integer",
+                    "description": "The height of the rendered diagram in pixels."
+                },
+                "feynMF_code": {
+                    "type": "string",
+                    "description": "The raw feynMF code as a single string to define the structure of the Feynman diagram. Due to current limitation, use `fmf{ghost}` instead of `fmf{dashes}` for dashed or higgs line"
+                }
+            }
+        },
+        "description": "Render Feynman diagrams using feynMF syntax, similar to LaTeX."
+    },
+    "outputType": "render_html",
+    "userSettings": null,
+    "authenticationType": "AUTH_TYPE_NONE",
+    "implementationType": "javascript"
+}
