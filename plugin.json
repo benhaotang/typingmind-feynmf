@@ -4,7 +4,7 @@
     "uuid": "b1b76ad5-4fb5-4ea3-a60d-3ec1375d0100",
     "title": "Feynman Diagram",
     "system": false,
-    "version": 1,
+    "version": 2,
     "iconURL": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Higgs_to_4leptons.png",
     "githubURL": "https://github.com/benhaotang/typingmind-feynmf",
     "openaiSpec": {
@@ -32,7 +32,7 @@
                 },
                 "feynMF_code": {
                     "type": "string",
-                    "description": "The raw feynMF code as a single string to define the structure of the Feynman diagram. Due to current limitation, use `fmf{ghost}` instead of `fmf{dashes}` for dashed or higgs line"
+                    "description": "The raw feynMF code, and feynMF code only as a single string to define the structure of the Feynman diagram. Due to current limitation, use `fmf{ghost}` instead of `fmf{dashes}` for dashed or higgs line. Don't include non-feynMF code. Best practice example: \"fmftopn{1}\n fmfbottomn{2}\n fmf{gluon}{i1,v1}\n fmf{ghost}{o1,v1}\n fmf{ghost,label=$p$,labelx=5,labely=-5}{v1,o2}\n fmflabel{i1}{$c,\\mu$}\n fmflabel{o1}{$b$}\n fmflabel{o2}{$a$}\n fmfdot{v1}\""
                 }
             }
         },
